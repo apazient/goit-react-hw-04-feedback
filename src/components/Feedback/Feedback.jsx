@@ -1,8 +1,11 @@
 import style from './Feedback.module.css';
+import PropTypes from 'prop-types';
+
 const Feedback = ({ options, onLeaveFeedback }) => {
-  function capitalizeFirstLetter(string) {
+  const capitalizeFirstLetter = string => {
     return string.charAt(0).toUpperCase() + string.slice(1);
-  }
+  };
+
   return (
     <div className={style['thumb-btn']}>
       <button
@@ -31,5 +34,10 @@ const Feedback = ({ options, onLeaveFeedback }) => {
       </button>
     </div>
   );
+};
+
+Feedback.propTypes = {
+  options: PropTypes.array,
+  onLeaveFeedback: PropTypes.node,
 };
 export default Feedback;
