@@ -26,7 +26,7 @@ Statistics.propTypes = {
   good: PropTypes.number,
   bad: PropTypes.number,
   neutral: PropTypes.number,
-  total: PropTypes.node,
-  posPercentage: PropTypes.node,
+  total: PropTypes.number,
+  posPercentage: PropTypes.number,
 };
 export default Statistics;
